@@ -1,0 +1,36 @@
+{
+  "manifest_version": 2,
+
+  "name": "Aero Tab",
+  "description": "Chrome extension that groups tabs together by domain",
+  "version": "0.1",
+
+  "permissions": [
+    "tabs",
+    "<all_urls>"],
+  "commands": {
+    "toggle_dialog": {
+      "suggested_key": {
+        "default": "Ctrl+Q",
+        "mac": "Command+Q"
+      },
+      "description": "Toggles the tab grouping dialog"
+    }
+  },
+  "background": {
+    "scripts": ["javascripts/background.js"]
+  },
+  /**
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "js": ["javascripts/page.js"],
+    "css": ["stylsheets/main.js"],
+    "run_at": "document_start",
+    "all_frames": true
+  }],
+  **/
+  "browser_action": {
+    "default_icon": "icons/browser_icon.png",
+    "default_title": "Aero Tab"
+  }
+}

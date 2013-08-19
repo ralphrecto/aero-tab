@@ -1,0 +1,16 @@
+#aero-tab-dialog {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  margin-top: -50px;
+  background: rgba(0, 0, 0, 0.8);
+  font-family: "Helvetica", Arial;
+  color: #fff;
+}
+
+#aero-tab-dialog ul li {
+  display: inline;
+  list-style-type: none;
+}

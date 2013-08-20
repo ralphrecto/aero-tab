@@ -20,6 +20,10 @@
       });
       //listener must return true for response to be sent
       return true;
+    } else if(request.type === "change_tab"){
+      chrome.tabs.update(request.tabId, {active: true});
+      sendResponse();
+      return true;
     }
   });
 

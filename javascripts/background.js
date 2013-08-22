@@ -32,4 +32,13 @@
     chrome.tabs.executeScript(null, {file: "javascripts/page_dialog.js"});
   });
 
+  //inject content script into all tabs on install (no restart needed)
+  chrome.runtime.onInstalled.addListener(function(details){
+    chrome.tabs.getAllInWindow(null, function(tabs){
+      for(var i = 0; i < tabs.length; i++){
+        chrome.tabs.executeScript(tabs[i].id, {file: "javascripts/lib/jquery-1.10.2.min.js"});
+      }
+    });
+  });
+
 })();

@@ -15,6 +15,7 @@
   var domain_menu = document.getElementById(g.domainMenuId);
   if(domain_menu){
     clear();
+    return;
   }
   chrome.runtime.sendMessage({type: "get_urls"}, function(response){
     var domain_ul = document.createElement("ul");

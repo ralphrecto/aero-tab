@@ -20,10 +20,11 @@
   font-family: "Helvetica", Arial;
   color: #fff;
   text-align: center;
-  font-size: 16px;
+  font-size: 14px;
   background: rgba(60, 60, 60, 0.7);
   border-radius: 10px;
   overflow-y: auto;
+  overflow-x: hidden;
 }
 
 #aero-domain-menu ul {
@@ -33,11 +34,11 @@
   padding: 0;
   width: 100%;
   list-style-type: none;
-  overflow-y: visible;
 }
 
 #aero-domain-menu ul li {
   height: 30px;
+  line-height: 30px;
 }
 
 #aero-domain-menu ul li:hover {
@@ -60,6 +61,8 @@
   font-size: 12px;
   background: rgba(20, 20, 20, 0.6);
   overflow-y: auto;
+  overflow-x: hidden;
+  border-radius: 0 10px 10px 0;
 }
 
 #aero-tab-menu ul {
